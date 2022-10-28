@@ -6,12 +6,11 @@ phases:
       nodejs: 14
   pre_build:
     commands:
-      - cd ./app-cdk
+      - cd .
       - echo Installing npm packages... 
       - npm install
   build:
     commands:
       - echo run tests...
       - pwd
-      - ls
       - CI=true npm run test  
